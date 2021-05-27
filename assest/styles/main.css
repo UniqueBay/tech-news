@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --heading: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: beige;
+}
+
+/* General styling */
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+hr {
+  width: 95vw;
+  margin: 0 auto;
+}
+
+/* Banner Styling */
+
+.banner {
+  min-height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 30px 0;
+  margin-top: 8px;
+}
+
+.banner-main-content {
+  padding: 0 2rem;
+  line-height: 1.7;
+}
+
+.banner-main-content h2 {
+  font-size: 2rem;
+  font-family: var(--heading);
+}
+
+.banner-main-content h3 {
+  padding: 1rem 0;
+}
+
+.banner-main-content button {
+  border: none;
+  background: #6495ed;
+  padding: 14px 18px;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  transition: background 1s ease;
+}
+
+.banner-main-content button a {
+  color: #f5f5dc;
+  transition: color 1s ease;
+}
+
+.banner-main-content button:hover {
+  background: #2e4368;
+}
+
+.banner-main-content button:hover a {
+  color: #000;
+}
+
+.current-new-head {
+  background: #f5f5dc;
+  padding: 20px;
+  font-size: 12px;
+  margin: 20px 0;
+}
+
+.current-new-head h3 {
+  padding: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
+.current-new-head h3:hover::before {
+  content: ">> ";
+  position: absolute;
+  left: -12px;
+}
+
+.current-new-head span {
+  display: block;
+  font-family: var(--heading);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.hot-topic {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 12px;
+  height: 300px;
+}
+
+.hot-topic img {
+  display: block;
+}
+
+.hot-topic-content {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  line-height: 1.3;
+  color: #f5f5dc;
+}
+
+.hot-topic h2 {
+  padding: 10px 0;
+  font-size: 18px;
+  text-shadow: 0 0 2px #000;
+}
+
+.hot-topic h3 {
+  padding: 10px 0;
+  font-size: 16px;
+  text-shadow: 0 0 2px #000;
+}
+
+.hot-topic p {
+  padding: 10px 0;
+  font-size: 15px;
+  text-shadow: 0 0 2px #000;
+  padding: 12px 10px;
+}
+
+.hot-topic-content a {
+  display: block;
+  background: #6495ed;
+  border: none;
+  width: 95px;
+  border-radius: 2px;
+  text-align: center;
+  padding: 7px 10px;
+  font-size: 14px;
+  margin: 10px 0 10px 10px;
+}
+
+.hot-topic-content a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content Styling */
+
+main a{
+  padding: 15px 0;
+  display: block;
+  transition: all 0.7s;
+}
+
+main span {
+  transition: padding-left 0.7s;
+}
+
+main
