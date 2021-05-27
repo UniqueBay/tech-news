@@ -1,51 +1,57 @@
-.head {
+.top-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  background: #6495ed;
-  color: #f5f5dc;
+  background: #252525;
+  color: #fff;
   padding: 20px 30px;
 }
 
-.head .fas {
+.top-head .fas {
   font-size: 2rem;
   cursor: pointer;
 }
 
-.times {
+/******* js related styling *****/
+
+.times-btn {
   display: none;
 }
 
-.navbar {
-  background: #6495ed;
+.nav-bar {
+  background: #333;
   height: 0;
   overflow: hidden;
 }
 
-.show {
+.show-nav {
   height: auto;
 }
 
-.navbar ul li {
+/********************/
+
+.nav-bar ul li {
   text-align: center;
   display: block;
   padding: 15px 0;
   transition: all 1s ease-in-out;
 }
 
-.navbar ul li:hover {
-  background: #2e4368;
+.nav-bar ul li:hover {
+  background: #0e0e0e;
 }
 
-.navbar ul li a {
-  color: #f5f5dc;
+.nav-bar ul li a {
+  color: #fff;
   text-transform: uppercase;
 }
 
-.navbar ul li a:hover {
+.nav-bar ul li a:hover {
   text-decoration: underline;
 }
+
+/* social -icons */
 
 .social-icons {
   display: none;
@@ -53,45 +59,43 @@
 
 /* Media Query */
 
-@media (max-width: 800px) {
-  /* navbar */
-  .ham,
-  .times {
+@media (min-width: 800px) {
+  /* nav */
+  .ham-btn,
+  .times-btn {
     display: none !important;
   }
 
   .navigation-container {
     display: flex;
-    background: #6495ed;
+    background: #252525;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .head {
-    flex: 0 0 15px;
+  .top-head {
+    flex: 0 0 15%;
   }
 
-  .navbar {
+  .nav-bar {
     flex: 1 0 auto;
     height: 100%;
     background: transparent;
   }
 
-  .navbar nav ul {
+  .nav-bar nav ul {
     display: flex;
     justify-content: center;
   }
-
-  .navbar nav ul li {
+  .nav-bar nav ul li {
     padding-right: 30px;
   }
 
-  .navbar nav ul li:hover {
+  .nav-bar nav ul li:hover {
     background: none;
   }
 
-  /* Social icons */
-
+  /* social icons */
   .social-icons {
     flex: 0 1 30%;
     display: block;
@@ -99,16 +103,14 @@
   }
 
   .social-icons .fab {
-    color: #f5f5dc;
+    color: #fff;
     font-size: 2rem;
   }
-
   .social-icons ul {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
   }
-
   .social-icons ul li {
     padding: 20px;
   }
