@@ -50,3 +50,66 @@
 .social-icons {
   display: none;
 }
+
+/* Media Query */
+
+@media (max-width: 800px) {
+  /* navbar */
+  .ham,
+  .times {
+    display: none !important;
+  }
+
+  .navigation-container {
+    display: flex;
+    background: #6495ed;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .head {
+    flex: 0 0 15px;
+  }
+
+  .navbar {
+    flex: 1 0 auto;
+    height: 100%;
+    background: transparent;
+  }
+
+  .navbar nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar nav ul li {
+    padding-right: 30px;
+  }
+
+  .navbar nav ul li:hover {
+    background: none;
+  }
+
+  /* Social icons */
+
+  .social-icons {
+    flex: 0 1 30%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .social-icons .fab {
+    color: #f5f5dc;
+    font-size: 2rem;
+  }
+
+  .social-icons ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .social-icons ul li {
+    padding: 20px;
+  }
+}
