@@ -316,3 +316,16 @@ main a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 992px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1080p) {
+  .banner {
+    grid-template-columns: 1fr 2fr;
+  }
+}
