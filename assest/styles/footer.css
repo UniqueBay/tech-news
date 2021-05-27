@@ -10,7 +10,7 @@ footer h2 {
 
 footer p {
   padding: 10px 0;
-  line: height 1.3;
+  line-height: 1.3;
 }
 
 .footer-left .footer-right {
@@ -45,4 +45,17 @@ footer > p {
   width: 200px;
   padding: 10px 0;
   border-bottom: 1.6px solid #2e4368;
+}
+
+/* Media Query */
+
+@media (max-width: 800px) {
+  .footer-container {
+    display: flex;
+  }
+
+  .footer-left,
+  .footer-left {
+    flex: 1;
+  }
 }
