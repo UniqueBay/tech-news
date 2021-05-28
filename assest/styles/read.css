@@ -1,3 +1,15 @@
+p {
+  margin: 10px;
+}
+
+ul {
+  margin: 10px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 992px) {
   main {
     display: block;
